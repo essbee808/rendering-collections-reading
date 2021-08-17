@@ -1,3 +1,13 @@
-<% @posts.each do |post| %>
+<!-- <% @posts.each do |post| %>
   <%= render :partial => "post", locals: {:post => post} %>
 <% end %>
+-->
+
+<!-- pass the collection option to the render method 
+<%= render :partial => "post", :collection => @posts %>
+-->
+
+<!-- print something to the screen to alert user if collection is empty -->
+
+<!-- Use () to wrap collection when dealing with an empty collection -->
+<%= render(@posts) || "There are no blog posts!" %>
